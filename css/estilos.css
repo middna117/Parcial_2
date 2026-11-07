@@ -1,0 +1,258 @@
+html, body, header, nav, section, article, div, span, 
+h1, h2, h3, p, ul, li, figure, figcaption, img, frame {
+    box-sizing: border-box; /* para evitar desbordamientos */
+}
+
+h1, h2, h3, footer{
+    line-height:1.2;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size:50px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -0.050em;
+}
+
+header, nav, main, aside, footer {
+padding: 20px;
+}
+
+main {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+align-items: center;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    border-bottom: 2px solid #f5f0e8;
+    background-color: #3B45B3;
+    color: #ffffff;
+}
+
+.header-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    padding-block: 1.4rem;
+}
+
+.main-contenido{
+    padding: 30px 20px;
+    flex: 1 1 320px;
+}
+
+ol{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* nadamas afeta al boton de conocer mas del inicio*/
+.main-contenido a.button{
+    text-decoration: none;
+     color: #ffffff;
+    background-color: #1D2259;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block; 
+    transition: all 0.3s ease;
+}
+
+.footer {
+    background-color: #3B45B3;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer-contenido {
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1 rem;
+}
+
+.footer-contenido p {
+    margin: 0;
+}
+
+
+.header-contenido, .footer-contenido, main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-contenido {
+    padding-block: 1.4rem;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header nav{
+    padding: 0;
+}
+
+footer a {
+    color: #ffffff;
+    background-color: #1D2259;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block; 
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.main-contenido a.button:hover, footer a:hover{
+    background-color: #2d358a;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+.navlist {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    gap: 15px;
+}
+
+.navlist a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block; 
+    transition: all 0.3s ease;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navlist a:hover {
+    background-color: #bbbbbb;
+}
+
+li, td, a, figcaption {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.index-imagen{
+    flex: 1 1 320px;
+    text-align: center;
+    display: inline-block;
+}
+
+.reseña-imagen {
+    flex: 1 1 320px;
+    text-align: center;
+    display: block;
+}
+
+.index-imagen img, .reseña-imagen img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+figcaption {
+    margin: 10px;
+}
+
+.alcance-imagen, .info-imagen{
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.alcance-imagen img, .info-imagen img{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-block: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+caption {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+thead th {
+    background-color: #3B45B3;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+th, td {
+    border: 3px solid #b4b4b4;
+    padding: 12px 14px;
+    text-align: left;
+}
+
+/* esto es para los botones de la tabla en info*/
+.main-contenido table a{
+    text-decoration: none;
+}
+
+.main-contenido table a:hover{
+    text-decoration: underline;
+}
+
+.main-contenido table a:active{
+    color: red;
+}
+
+.lista-ordenada {
+    margin: 20px;
+}
+
+.lista-ordenada li{
+    margin-bottom: 40px;
+}
+
+.cita {
+    border-left: 4px solid #1D2259;
+    font-style: italic;
+    padding: 20px 20px;
+}
+
